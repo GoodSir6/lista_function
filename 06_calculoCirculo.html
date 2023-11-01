@@ -8,11 +8,19 @@
     */
 
     //Entrada
-
+    let raio = Number(prompt("Insira o raio do círculo:").trim());
+    let a = 0, p = 0;
 
     //Processamento
-
+    function area(){
+        a = (Math.PI * raio ** 2).toFixed(2).replace(".",",")
+        return a;
+    } function perimetro(){
+        p = (2 * Math.PI * raio).toFixed(2).replace(".",",")
+        return p;
+    }
 
     //Saída
+    alert(`A área do triângulo com ${raio} de raio, é de ${area()} e o perímetro é de ${perimetro()}`);
 
 </script>
