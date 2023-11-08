@@ -5,11 +5,17 @@
     */
 
     //Entrada
-
-
+    let numInteiro = parseInt(prompt("Insira um número inteiro:").trim());
+    let numFatorado = numInteiro;
     //Processamento
-
+    function fatorar() {
+        for (let i = numInteiro-1; i > 0; i--) {
+            numFatorado = numFatorado * i;
+        }
+        return numFatorado;
+    }
 
     //Saída
+    alert(`O número ${numInteiro} fatorado, é: ${fatorar()}`);
 
 </script>

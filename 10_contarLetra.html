@@ -6,11 +6,20 @@
     */
 
     //Entrada
-
+    let frase = prompt("Insira uma frase ou palavra:");
+    let letra = prompt("Qual letra você quer?");
+    let quantiaLetras = 0;
 
     //Processamento
-
+    function acharLetra() {
+        for (const algarismo of frase) {
+            if (algarismo == letra.toUpperCase() || algarismo == letra.toLowerCase())
+            quantiaLetras++;
+        }
+        return quantiaLetras;
+    }
 
     //Saída
+    alert(`A letra ${letra} aparece ${acharLetra()} vezes, na frase: "${frase}"`);
 
 </script>

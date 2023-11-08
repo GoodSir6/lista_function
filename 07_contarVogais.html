@@ -7,11 +7,19 @@
     */
 
     //Entrada
-
+    let palavra = prompt("Insira uma palavra:").trim().toLowerCase();
+    let quantiaVogais = 0;
 
     //Processamento
-
+    function contarVogais() {
+        for (const letra of palavra) {
+            if(letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u")
+            quantiaVogais++;
+        }
+        return quantiaVogais;
+    }
 
     //Saída
+    alert(`O número de vogais na string "${palavra}" é de ${contarVogais()}`);
 
 </script>
